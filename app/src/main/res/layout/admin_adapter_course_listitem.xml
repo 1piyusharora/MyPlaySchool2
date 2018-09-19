@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/four_dp"
+    android:layout_marginBottom="@dimen/four_dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="2dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View android:background="@color/colorPrimary"
+                android:layout_width = "@dimen/four_dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/view"
+                android:layout_alignTop="@+id/courseName"
+                android:layout_alignBottom="@+id/courseName" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text1"
+                android:id="@+id/courseName"
+                android:textColor="@color/colorPrimary"
+                android:maxLength="30"
+                android:paddingTop="@dimen/eight_dp"
+                android:paddingBottom="@dimen/eight_dp"
+                android:paddingLeft="@dimen/eight_dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/view"
+                android:layout_toEndOf="@+id/view" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

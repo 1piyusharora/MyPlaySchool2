@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".adminApp.activity.DigitalMessageActivity">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewMsg"
+        android:padding="@dimen/four_dp"
+        android:listSelector="@android:color/transparent"
+        android:divider="@null"/>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D32F2F</color>
+    <color name="colorPrimaryDark">#C62828</color>
+    <color name="textColorPrimary">#ff848484</color>
+    <color name="textColorPrimaryDark">#42aeb1</color>
+    <color name="windowBackground">#e2e2e2</color>
+    <color name="navigationBarColor">#1565c0</color>
+    <color name="colorAccent">#D32F2F</color>
+    <color name="colorControlActivated">#D32F2F</color>
+    <color name="colorActivatedHighlight">#D32F2F</color>
+    <color name="window_background">#FFFFFF</color>
+    <color name="window_background_dark">#424242</color>
+    <color name="white">#ffffff</color>
+    <color name="deepOrange">#F44336</color>
+    <color name="opPrimaryDark">#9B1565c0</color>
+    <color name="lightgrey">#D3D3D3</color>
+    <color name="icon_color">#3F515E</color>
+
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="lightgray">#f5f5f5</color>
+
+
+
+    <color name="primary">#0099CC</color>
+    <color name="primary_dark">#0082AD</color>
+    <color name="text_color_primary">#000000</color>
+    <color name="text_color_primary_dark">#FAFAFA</color>
+    <color name="text_color_secondary">#606060</color>
+    <color name="text_color_secondary_dark">#EEEEEE</color>
+    <color name="close_button">#009688</color>
+
+
+    <color name="grayColor">#424242</color>
+    <color name="lightgrayColor">#616161</color>
+
+    <color name="lightBlack">#434343</color>
+
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+
+    <color name="transport_bus">#92f4eb73</color>
+    <color name="transport_maid">#92dcce06</color>
+    <color name="transport_route">#9206dc95</color>
+    <color name="transport_driver">#824a06dc</color>
+
+    <color name="tv_end_color">#D32F2F</color>
+    <color name="tv_start_color">#880E4F</color>
+
+    <color name="colorgrey">#bcbbbb</color>
+    <color name="colorlightgrey">#E0E0E0</color>
+    <color name="colorlightgreyTwo">#F5F5F5</color>
+    <color name="colorGreyBottomIcon">#bdbdbd</color>
+    <color name="colorDarkgrey">#616161</color>
+
+    <color name="colorSeaGreen">#339980</color>
+    <color name="colorYellow">#ffd54f</color>
+    <color name="colorBlue">#336699</color>
+    <color name="colorGreen">#64dd17</color>
+    <color name="colorOrange">#d32f2f</color>
+
+    <color name="colorSeaGreenLight">#14339980</color>
+    <color name="colorYellowLight">#14ffd54f</color>
+    <color name="colorBlueLight">#14336699</color>
+    <color name="colorGreenLight">#1464dd17</color>
+    <color name="colorOrangeLight">#14d32f2f</color>
+</resources>

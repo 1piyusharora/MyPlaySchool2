@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+    android:id="@+id/rlAdminMainActivity"
+    tools:context=".adminApp.activity.AdminMainActivity">
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/eight_dp"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/four_dp"
+        android:horizontalSpacing="@dimen/four_dp"
+        android:stretchMode="columnWidth"
+        android:listSelector="@android:color/transparent"
+        android:gravity="center"/>
+
+</RelativeLayout>

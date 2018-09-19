@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="none"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".adminApp.activity.BranchCourseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="4dp"
+            android:layout_margin="@dimen/eight_dp"
+            android:id="@+id/imageView1"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Add Class Details"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/textView14"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="4dp"
+            android:layout_margin="@dimen/eight_dp"
+            android:layout_below="@+id/imageView1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Select Branch"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/textView15"
+                    android:layout_margin="@dimen/four_dp"
+                    android:layout_below="@+id/textView14"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerBranches"
+                    android:layout_margin="@dimen/four_dp"
+                    android:layout_below="@+id/textView15"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Select Class"
+                    android:layout_margin="@dimen/four_dp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/textView16"
+                    android:layout_below="@+id/spinnerBranches"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerCourses"
+                    android:layout_margin="@dimen/four_dp"
+                    android:layout_below="@+id/textView16"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@android:style/TextAppearance.Medium"
+                    android:visibility="gone">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edCourseFees"
+                        android:inputType="number"
+                        android:layout_margin="@dimen/four_dp"
+                        android:hint="Course Fee" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:hintTextAppearance="@android:style/TextAppearance.Medium"
+                    android:layout_marginTop="15dip">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edCourseDuration"
+                        android:inputType="number"
+                        android:layout_margin="@dimen/four_dp"
+                        android:hint="Course Duration(In days)" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:hintTextAppearance="@android:style/TextAppearance.Medium"
+                    android:layout_marginTop="15dip">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edCourseHour"
+                        android:inputType="number"
+                        android:layout_margin="@dimen/four_dp"
+                        android:hint="Course Hour's(Per day)" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:hintTextAppearance="@android:style/TextAppearance.Medium"
+                    android:layout_marginTop="15dip">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/edCourseDesc"
+                        android:inputType="textCapSentences"
+                        android:layout_margin="@dimen/four_dp"
+                        android:hint="Course Description" />
+                </android.support.design.widget.TextInputLayout>
+                <!--<android.support.design.widget.TextInputLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@android:style/TextAppearance.Medium"
+                    android:layout_marginTop="15dip">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/edCourseDiscount"
+                        android:inputType="number|numberSigned"
+                        android:layout_margin="@dimen/four_dp"
+                        android:hint="Course Discount" />
+                </android.support.design.widget.TextInputLayout>-->
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:id="@+id/btnAddBranchCourse"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorPrimary"
+                    android:layout_margin="@dimen/eight_dp"
+                    android:layout_below="@+id/edCourseDiscount"
+                    android:layout_centerHorizontal="true" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</ScrollView>

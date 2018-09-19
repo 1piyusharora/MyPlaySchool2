@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_dashboard"
+    tools:context=".LoginActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/eight_dp"
+            android:paddingTop="@dimen/eight_dp"
+            app:cardCornerRadius="@dimen/four_dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:id="@+id/rel_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="#7db1b1b1"
+                android:orientation="vertical">
+
+
+
+                <!--<EditText-->
+                <!--android:id="@+id/etxt_username"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="Email"-->
+                <!--android:background="@drawable/custom_btn_white"-->
+                <!--android:inputType="textEmailAddress" />-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    android:layout_marginTop="@dimen/eight_dp"
+                    android:padding="@dimen/four_dp"
+                    app:cardCornerRadius="@dimen/four_dp"
+                    app:cardElevation="0dp">
+
+                    <EditText
+                        android:id="@+id/etxt_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/custom_btn_white"
+                        android:hint="Email-Id"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/eight_dp"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorDarkgrey"
+                        android:textColorHint="@color/colorDarkgrey" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    android:layout_marginTop="@dimen/eight_dp"
+                    android:padding="@dimen/four_dp"
+                    app:cardCornerRadius="@dimen/four_dp"
+                    app:cardElevation="0dp">
+
+                    <EditText
+                        android:id="@+id/etxt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/custom_btn_white"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/eight_dp"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorDarkgrey"
+                        android:textColorHint="@color/colorDarkgrey" />
+
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    android:layout_marginTop="@dimen/eight_dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorDarkgrey"
+                        android:text="Show Password" />
+
+                    <CheckBox
+                        android:id="@+id/cbShowPwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    android:layout_marginTop="@dimen/eight_dp"
+                    android:padding="@dimen/four_dp"
+                    app:cardCornerRadius="@dimen/four_dp"
+                    app:cardElevation="0dp">
+
+                    <Spinner
+                        android:id="@+id/spinnerUserType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/cbShowPwd"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_stroke"
+                    android:text="Login"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+
+</RelativeLayout>

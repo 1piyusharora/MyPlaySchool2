@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.auribisesmyplayschool.myplayschool">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".adminApp.activity.AdminMainActivity" />
+        <activity android:name=".adminApp.activity.ManageCourseActivity" />
+        <activity android:name=".adminApp.activity.ManageBranchManagerActivity" />
+        <activity android:name=".adminApp.activity.CollectionGraphActivity" />
+        <activity android:name=".adminApp.activity.ChangeProfileActivity" />
+        <activity android:name=".adminApp.activity.DigitalMessageActivity" />
+        <activity android:name=".adminApp.activity.AdminAboutUsActivity" />
+        <activity android:name=".adminApp.activity.AddCourseActivity" />
+        <activity android:name=".adminApp.activity.ManageBranchActivity" />
+        <activity android:name=".adminApp.activity.AddUserActivity" />
+        <activity android:name=".adminApp.activity.ViewAssignedBranchesActivity" />
+        <activity android:name=".adminApp.activity.AddBranchActivity" />
+        <activity android:name=".adminApp.activity.BranchCourseActivity" />
+        <activity android:name=".adminApp.activity.RouteBusesActivity" />
+        <activity
+            android:name=".adminApp.activity.FeeHeadActivity"
+            android:label="Add Services"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+        <activity android:name=".adminApp.activity.AddFeeHeadsActivity"></activity>
+    </application>
+
+</manifest>

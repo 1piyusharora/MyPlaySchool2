@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/four_dp_two"
+    android:layout_marginBottom="@dimen/four_dp_two">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="2dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View android:background="@color/colorPrimary"
+                android:layout_width = "@dimen/four_dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/view"
+                android:layout_alignTop="@+id/branchName"
+                android:layout_alignBottom="@+id/branchUserName" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text1"
+                android:id="@+id/branchName"
+                android:textColor="@color/colorPrimary"
+                android:paddingTop="@dimen/four_dp"
+                android:paddingLeft="@dimen/eight_dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/view"
+                android:layout_toEndOf="@+id/view" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Medium Text2"
+                android:id="@+id/branchContact"
+                android:layout_below="@+id/branchName"
+                android:paddingTop="@dimen/four_dp"
+                android:paddingLeft="@dimen/eight_dp"
+                android:layout_toRightOf="@+id/view"
+                android:layout_toEndOf="@+id/view" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Medium Text2"
+                android:id="@+id/branchAddress"
+                android:layout_below="@+id/branchContact"
+                android:paddingTop="@dimen/four_dp"
+                android:paddingLeft="@dimen/eight_dp"
+                android:layout_toRightOf="@+id/view"
+                android:layout_toEndOf="@+id/view" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Medium Text3"
+                android:id="@+id/branchUserName"
+                android:paddingTop="@dimen/four_dp"
+                android:paddingLeft="@dimen/eight_dp"
+                android:paddingBottom="@dimen/four_dp"
+                android:layout_below="@+id/branchAddress"
+                android:layout_toRightOf="@+id/view"
+                android:layout_toEndOf="@+id/view" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

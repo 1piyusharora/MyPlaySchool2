@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        card_view:cardCornerRadius="2dp"
+        android:layout_margin="2dp"
+        card_view:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <!--<View-->
+            <!--android:id="@+id/typeView"-->
+            <!--android:layout_width="4dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBottom="@+id/linearEditTexts"-->
+            <!--android:layout_alignTop="@+id/linearLayout"-->
+            <!--android:background="@color/colorPrimary" />-->
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/typeView"
+                android:layout_weight="0.3"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:text="Name"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/grayColor" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearEditTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayout"
+                android:layout_weight="0.7"
+                android:orientation="vertical"
+                android:paddingLeft="8dp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

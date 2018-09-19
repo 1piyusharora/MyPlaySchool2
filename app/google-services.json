@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "217348733284",
+    "firebase_url": "https://playschool-c6fa4.firebaseio.com",
+    "project_id": "playschool-c6fa4",
+    "storage_bucket": "playschool-c6fa4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217348733284:android:a6fc90205fec1717",
+        "android_client_info": {
+          "package_name": "com.auribisesmyplayschool.myplayschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217348733284-849hr3gmc2i7368rhli0takehlh6g2m6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.auribisesmyplayschool.myplayschool",
+            "certificate_hash": "bee6cb805932dbc06867e9210983a1f766dc6829"
+          }
+        },
+        {
+          "client_id": "217348733284-k5em9f5a97c1v0r6dvbv0ulior6iucsv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhzehbJBuBu7w7z0nFS7066Re84z2T8Xo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217348733284-k5em9f5a97c1v0r6dvbv0ulior6iucsv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
